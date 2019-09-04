@@ -25,7 +25,7 @@ html, body {
 			background-size:300% 300%;
 		 	border-image-slice: 10 10;
 			justify-content:center;
-			animation: gradientBG 10s ease infinite;		
+			animation: gradientBG 5s ease infinite;		
 	}
 	@keyframes gradientBG {
 	0% {
