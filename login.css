@@ -1,0 +1,106 @@
+html, body {
+ 		 	width: 100%;
+  			height: 100%;
+	}
+	body {
+			display:flex;
+			align-items: center;
+			font-family: "Exo", sans-serif;
+  			justify-content: center;
+  			background-image:url("https://i.imgur.com/p6sfSvz.png");
+			background-size: 110% 110%;
+			background-repeat:no-repeat;
+	}
+	
+		.container{
+			display:flex;
+			position:relative;
+			border:4px solid transparent;
+			border-style:inset;
+			border-radius:5px;
+			height:700px;
+			width:500px;
+			background: linear-gradient(-60deg,rgba(148, 142, 142),rgba(42, 44, 46),rgba(168, 165, 165));
+			border-image: linear-gradient(-60deg,rgba(148, 142, 142),rgba(42, 44, 46),rgba(168, 165, 165));
+			background-size:300% 300%;
+		 	border-image-slice: 10 10;
+			justify-content:center;
+			animation: gradientBG 10s ease infinite;		
+	}
+	@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+	
+	.input-form{
+		width:80%;
+		padding:9px 5px;
+		border-radius:10px;
+		border:2px solid black;
+		margin-left:8%;
+		margin-top:5%;	
+		text-align:center;
+		font-size:25px;
+	}		 
+	
+	.button {
+		border-radius:50px;
+		width:60%;
+		height:50px;
+		margin-left:90px;
+	 	background-image: linear-gradient(-75deg,rgba(20, 20, 20),rgba(42, 44, 46));
+	 	background-size:300% 100%;
+	 	color:white;
+		margin-top:25px;
+		font-size:15px;
+		font-family:Arial;
+		transition: all .4s ease-in-out;
+	}
+	.button:hover{
+		cursor:pointer;
+		background-position:100% 0;
+	}
+	.input-form:focus {
+    	outline: none;
+    	border-color:grey;
+	}
+	
+	.conect{
+		position:absolute;
+		text-align:center;
+		
+	}
+	.form{
+		padding-top:50%;
+	}
+		
+	#img{
+		content:url(https://i.imgur.com/gSyVeKD.png);
+		position:absolute;
+		margin-top:30%;
+		height:80px;
+	}
+	.user{
+		content:url(http://pixsector.com/cache/94bed8d5/av3cbfdc7ee86dab9a41d.png);
+		position:absolute;
+		height:35px;
+		width:35px;
+		margin-left:45px;
+		margin-top:33px;
+	}
+	.password{
+		content:url(https://www.pngfind.com/pngs/m/268-2683107_png-file-svg-password-icon-vector-png-transparent.png);
+		position:absolute;
+		height:25px;
+		width:23px;
+		margin-left:50px;
+		margin-top:37px;
+	}
+	
